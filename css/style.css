@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Hind', sans-serif;
+}
+
+html, body{
+	height: 100%;
+}
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+header{
+	width: 100%;
+	height: 80vh;
+	padding: 25px 2%;
+	max-height: 600px;
+	background-size: cover;
+	background-image: url('../images/capa.jpg');
+}
+
+header nav{
+	float: right;
+}
+
+header .logo{
+	float: left;
+	width: 218px;
+	height: 69px;
+	background-image: url('../images/logo.png');
+}
+
+header nav ul{
+	list-style-type: none;
+}
+header nav li {
+	float: left;
+	padding: 0 10px;
+}
+
+header li a{
+	text-decoration: none;
+	color: white;
+}
+
+.text-slider{
+	float: right;
+	max-width: 600px;
+	margin: 50px 30px;
+	padding: 60px 60px;
+	border-radius: 25px;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	background-color: rgba(117, 153, 189, 0.6);
+}
+
+.text-slider h2{
+	font-size: 30px;
+	color: white;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.3;
+}
+
+.text-slider p{
+	font-size: 16px;
+	color: white;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+section.secao-1{
+	width: 100%;
+	background-color: #300742;
+	padding: 20px 2%;
+}
+
+section.secao-1 .container{
+	max-width: 900px;
+}
+
+.text-secao-1{
+	width: 50%;
+	float: left;
+	color: white;
+
+}
+
+.text-secao-1 h2{
+
+}
+
+.text-secao-1 p{
+	margin-top: 8px;
+	font-size: 18px;
+}
+
+.text-secao-1 ul{
+	margin-top: 15px;
+	font-size: 16px;
+	list-style-position: inside;
+}
+
+.btn-1{
+	background-color: #FF703D;
+	width: 175px;
+	height: 44px;
+	line-height: 44px; /*usado pra centralizar na vertical */
+	color: white;
+	cursor: pointer;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 25px;
+	border: 1px solid white;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.img-secao-1{
+	width: 50%;
+	float: left;
+	height: 414px;
+	background-image: url('../images/devices.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
