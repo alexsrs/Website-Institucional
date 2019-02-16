@@ -105,12 +105,22 @@
 				<h2>Faça um visita</h2>
 				<div class="map-wrapper-3">	
 					<div class="map-wrapper-2">
-						<div id="mapa" class="map"></div><!--map-->
+
+						<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCnh9a-0dAbErxqWnQiJQqfL4DU_9YLEb8'></script><div class="map" id='gmap_canvas'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/pt'>Maps-Generator</a><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(-22.9256555,-43.232925799999975),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-22.9256555,-43.232925799999975)});infowindow = new google.maps.InfoWindow({content:'<strong style="color:black;">Meu mapa</strong><br><p style="color: black;">Rua Desembargador izidro, 6<br>Tijuca<br></p>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+							
+						</div><!--map-->
 					</div><!--map-wrapper-2-->
 				</div><!--map-wrapper-3-->				
 			</div><!--map-wrapper-->
 		<div class="clear"></div><!--clear-->
 		</div><!--container-->
 	</section><!--secao-4-->
+	<footer>
+		<div class="container">
+			<p>© 2019 Landing Page development by <a href="http://www.creapix.com.br">Creapix</a></p>
+			<p>+55 (21) 98487-0182 - <a href="mailto:atendimento@creapix.com.br?subject=LandingPage2">atendimento@creapix.com.br</p>
+		</div>
+	</footer><!--footer-->
 </body>
 </html>

@@ -386,6 +386,18 @@ section.secao-4{
 	border: 5px solid rgb(200, 200, 200);
 }
 
+footer{
+	background-color: #192123;
+	padding: 40px 0 20px 0;
+	text-align: center;
+	color: white;
+}
+
+footer p {
+	font-weight: 300;
+	font-size: 14px;
+}
+
 @media screen and (max-width: 768px){
 	header{
 		height: 100%;
@@ -482,7 +494,7 @@ section.secao-4{
 		padding: 80px 2% 30px 2%;
 		height: 100%;
 	}
-	
+
 	section.secao-4 .container{
 		text-align: center;
 	}
@@ -524,5 +536,4 @@ section.secao-4{
 		height: 100%;
 		padding-top: 100%;
 	}
-
 }
