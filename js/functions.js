@@ -20,7 +20,6 @@ window.onload = function(){
 			position:LatLng,
 			map:map,
 			icon:icon,
-
 		});
 
 		var infoWindow = new google.maps.InfoWindow({
@@ -28,16 +27,17 @@ window.onload = function(){
 			maxWidth:200,
 			pixelOffset: new google.maps.Size(0,20)
 		});
-
 		google.maps.event.addListener(marker,'click', function(){
 			infoWindow.open(map,marker);
 		});
-
-		
 	}
 
 	initialize();
 
 	var conteudo = '<p style="color:black;font-size:13px;padding:10px 0;">Meu endereço</p>';
 	addMarker(-27.616637,-48.5923228,'',conteudo);
+
+	//setTimeout(function(){
+	//	map.setZoom(20);
+	// },10000);
 }
