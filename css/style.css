@@ -181,7 +181,9 @@ section.secao-2{
 }
 
 section.secao-3{
+
 	width: 100%;
+	
 }
 
 .side-left{
@@ -192,6 +194,7 @@ section.secao-3{
 	color: white;
 	text-align: left;
 	height: 380px;
+
 }
 
 .side-left h2{
@@ -218,11 +221,12 @@ section.secao-3{
 
 .side-right{
 	width: 50%;
-	float: right;
-	background-color: white;
+	float: left;
+	background: white;
 	padding: 140px 2% 50px 2%;
 	color: black;
 	height: 380px;
+	
 }
 
 .side-right .titulo-autor {
@@ -250,9 +254,11 @@ section.secao-3{
 	float: left;
 	width: 64px;
 	margin-right: 30px;
-	position: relative;
-	top: -6px
+	/*position: relative;*/
+	top: -6px;
 }
+
+
 
 .side-right .texto-autor p{
 	font-weight: 300;
@@ -263,14 +269,14 @@ section.secao-3{
 	text-align: justify;
 }
 
-.side-right .bullets{
+.bullets{
 	width: 100%;
 	float: left;
 	margin-top: 8px;
-	padding-left: 10px;
+	padding-left: 30px;
 }
 
-.side-right .bullets span{
+.bullets span{
 	float: left;
 	width: 16px;
 	height: 16px;	
@@ -280,10 +286,21 @@ section.secao-3{
 	cursor: pointer;
 }
 
-.side-right-wrapper{
-	max-width: 400px;
-	float: left;
+.scrollEquipe {
+	/*max-width: 600px;*/
 	padding-left: 30px;
+	overflow: hidden;
+}
+
+.scrollEquipe-wrapper{
+	width: 100%;
+}
+
+.side-right-wrapper{
+	float: left;
+	max-width: 500px;
+	padding-right: 30px;
+
 }
 
 section.secao-4{
