@@ -269,14 +269,14 @@ section.secao-3{
 	text-align: justify;
 }
 
-.bullets{
+.slider-bullets{
 	width: 100%;
 	float: left;
 	margin-top: 8px;
-	padding-left: 30px;
+	padding-left: 40px;
 }
 
-.bullets span{
+.slider-bullets span{
 	float: left;
 	width: 16px;
 	height: 16px;	
@@ -287,20 +287,22 @@ section.secao-3{
 }
 
 .scrollEquipe {
-	/*max-width: 600px;*/
-	padding-left: 30px;
+	max-width: 600px;
+	padding-left: 20px;
 	overflow: hidden;
 }
 
-.scrollEquipe-wrapper{
+
+
+.sobre-autor{
+	float: left;
 	width: 100%;
+	padding: 0 20px;
+
 }
 
-.side-right-wrapper{
-	float: left;
-	max-width: 500px;
-	padding-right: 30px;
-
+.scroll-wrapper{
+	width: 100%;
 }
 
 section.secao-4{
