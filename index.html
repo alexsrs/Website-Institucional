@@ -131,9 +131,10 @@
 			<div class="form">
 				<h2>Lorem ispum nulam auctor maximus</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor maximus justo, eu scelerisque metus molestie ac. Proin eget quam blandit, viverra orci eget, aliquet sapien. Sed auctor porta libero, ac elementum orci mattis at.</p>
-				<form>
+				<form method="post" action="form.php">
 					<input type="text" name="nome" placeholder="Nome*"/>
-					<input type="text" name="email" placeholder="E-mail*"/>
+					<input type="email" name="email" placeholder="E-mail*"/>
+					<input type="text" name="telefone" placeholder="Telefone*">
 					<textarea name="mensagem" placeholder="Mensagem*"></textarea>
 					<div class="clear"></div><!--clear-->
 					<div><input type="submit" value="enviar" /></div>
@@ -163,6 +164,50 @@
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVcnZBBojfC2hU-tDUR9hFXu__VrVwJ5M"></script>
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/ajaxform.js"></script>
+
+
+	<script>
+		$(function(){
+			$('form').submit(function(){
+				if(formularioPreenchido()){
+						var form = $('form');
+						$('form').ajaxSubmit({
+							beforeSubmit:function(){
+								form.find('input[type=submit]').attr('disable','true');
+								form.find('input[type=submit]').animate({'opacity':'0.4'})
+								form.find('input[type=submit]').attr('value','Enviando');
+							},
+							success:function(data){
+							//aqui você pode inserir uma div, por exemplo
+							// qualquer mensagem de sucesso, para ser exibida após envio do formulário
+							alert('Formulário foi enviado com sucesso !');
+							form.find('input[type=submit]').removeAttr('disable');
+							form.find('input[type=submit]').animate({'opacity':'1'})
+							form.find('input[type=submit]').attr('value','Enviar');
+							form[0].reset(); // apaga o formulário após o envio
+							}
+						});
+				} else {
+					alert("Campos vazios não são permitidos !");
+				}
+				return false;
+			})
+
+			function formularioPreenchido(){
+				var nome = $('[name=nome]').val();
+				var email = $('[name=email]').val();
+				var telefone = $('[name=telefone]').val();
+				var mensagem = $('[name=mensagem]').val();
+				if(nome ==='' || email ==='' || telefone ==='' || mensagem ===''){
+					return false;
+				} else {
+					return true;
+				}
+			}
+		})
+	</script>
+	
 	<script type="text/javascript" src="js/functions.js"></script>
 	<script type="text/javascript" src="js/menu_responsive.js"></script>
 	<script type="text/javascript" src="js/menuScroll.js"></script>

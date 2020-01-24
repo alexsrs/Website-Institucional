@@ -334,7 +334,8 @@ section.secao-4{
 	margin-top: 15px;
 }
 
-.form form input[type=text]{
+.form form input[type=text],
+.form form input[type=email]{
 	margin-top: 10px;
 	width: 100%;
 	max-width: 400px;
